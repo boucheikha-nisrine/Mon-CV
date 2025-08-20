@@ -1,0 +1,116 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #2d2d2d;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f5c542;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Chaque section = plein écran */
+.section-full {
+  height: 100vh; /* prend toute la hauteur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Boîte blanche centrée */
+.section-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Profil spécifique */
+.profil-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profil-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #f5c542;
+}
+
+.profil-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.profil-text h2 {
+  margin: 5px 0 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+.profil-text p {
+  margin-bottom: 15px;
+}
+
+.profil-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profil-text li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Titres des sections */
+.section-box h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f5c542;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Liens */
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
