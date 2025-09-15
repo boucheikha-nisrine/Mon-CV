@@ -1,26 +1,21 @@
-/* Global */
+/* Style global */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #000000;
+  line-height: 1.6;
+  background: #f4f4f9;
   color: #333;
 }
 
-/* Navigation */
+/* Barre de navigation */
 nav {
-  background: #e2e2e2;
+  background: #2d2d2d;
   padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-size: 18px;
 }
 
-.logo {
-  padding: 10 px;
-  text-align: 50%;
-}
-  
 nav ul {
   list-style: none;
   display: flex;
@@ -43,32 +38,27 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Chaque section = plein écran */
-.section-full {
-  height: 100vh; /* prend toute la hauteur */
+/* Section présentation centrée */
+.profil-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-/* Boîte blanche centrée */
-.section-box {
+  height: 100vh; /* occupe toute la fenêtre */
   background: #fff;
   padding: 40px;
+}
+
+.profil-content {
+  display: flex;
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.15);
   max-width: 900px;
-  width: 100%;
 }
 
-/* Profil spécifique */
-.profil-content {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
+/* Photo */
 .profil-photo img {
   width: 140px;
   height: 140px;
@@ -77,6 +67,7 @@ nav ul li a:hover {
   border: 3px solid #f5c542;
 }
 
+/* Texte */
 .profil-text h1 {
   margin: 0;
   font-size: 28px;
@@ -84,7 +75,7 @@ nav ul li a:hover {
 
 .profil-text h2 {
   margin: 5px 0 15px;
-  font-size: 15px;
+  font-size: 18px;
   color: #555;
 }
 
@@ -102,8 +93,14 @@ nav ul li a:hover {
   font-size: 15px;
 }
 
-/* Titres des sections */
-.section-box h2 {
+/* Sections générales */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
   font-size: 26px;
   margin-bottom: 15px;
   border-bottom: 2px solid #f5c542;
@@ -111,12 +108,12 @@ nav ul li a:hover {
   padding-bottom: 5px;
 }
 
-/* Liens */
-a {
+/* Liens contact */
+#contact a, .profil-text a {
   color: #2d2d2d;
   text-decoration: none;
 }
 
-a:hover {
+#contact a:hover, .profil-text a:hover {
   text-decoration: underline;
 }
