@@ -13,7 +13,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .logo {
@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #f5c542;
+  color: #c1ff72;
   text-decoration: none;
   font-weight: bold;
 }
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 .profil-text h2 {
   margin: 5px 0 15px;
-  font-size: 18px;
+  font-size: 15px;
   color: #555;
 }
 
