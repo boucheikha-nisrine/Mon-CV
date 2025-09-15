@@ -1,9 +1,9 @@
-/* Style global */
+/* Fond global blanc */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f9;
+  background: #fff; /* fond blanc */
   color: #333;
 }
 
@@ -38,13 +38,12 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Section présentation centrée */
+/* Profil */
 .profil-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* occupe toute la fenêtre */
-  background: #fff;
+  min-height: 100vh;
   padding: 40px;
 }
 
@@ -58,7 +57,7 @@ nav ul li a:hover {
   max-width: 900px;
 }
 
-/* Photo */
+/* Photo à gauche */
 .profil-photo img {
   width: 140px;
   height: 140px;
@@ -67,53 +66,87 @@ nav ul li a:hover {
   border: 3px solid #f5c542;
 }
 
-/* Texte */
+/* Texte aligné à gauche et en plus grand */
+.profil-text {
+  text-align: left; /* aligné à gauche */
+}
+
 .profil-text h1 {
-  margin: 0;
-  font-size: 28px;
+  margin: 0 0 10px 0;
+  font-size: 32px; /* plus gros que h2 des sections */
+  font-weight: bold;
 }
 
 .profil-text h2 {
-  margin: 5px 0 15px;
-  font-size: 18px;
+  margin: 0 0 15px 0;
+  font-size: 22px; /* sous-titre légèrement plus petit */
   color: #555;
+  font-weight: normal;
 }
 
 .profil-text p {
   margin-bottom: 15px;
+  font-size: 16px; /* texte descriptif plus lisible */
 }
 
+/* Paris et Permis B, alignés à gauche sans puces */
 .profil-text ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; 
+  padding-left: 0;
+  margin: 0;
+  font-size: 16px;
 }
 
 .profil-text li {
   margin-bottom: 6px;
-  font-size: 15px;
 }
 
-/* Sections générales */
+/* Sections générales centrées avec rectangle */
 section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* prend toute la fenêtre */
+  padding: 0 20px;
 }
 
+section > div {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  max-width: 900px;
+  width: 100%;
+  text-align: left; /* texte aligné à gauche par défaut */
+}
+
+/* Titres centrés avec trait court */
 section h2 {
   font-size: 26px;
   margin-bottom: 15px;
-  border-bottom: 2px solid #f5c542;
   display: inline-block;
+  border-bottom: 2px solid #f5c542; /* trait juste sous le texte */
   padding-bottom: 5px;
+  text-align: center;
 }
 
-/* Liens contact */
-#contact a, .profil-text a {
+/* Listes avec puces pour toutes les sections sauf profil */
+section ul {
+  list-style: disc;    /* puces normales */
+  padding-left: 20px;  /* espace entre la puce et le texte */
+  margin: 0;
+}
+
+section li {
+  margin-bottom: 6px;
+}
+
+/* Liens */
+#contact a {
   color: #2d2d2d;
   text-decoration: none;
 }
 
-#contact a:hover, .profil-text a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
